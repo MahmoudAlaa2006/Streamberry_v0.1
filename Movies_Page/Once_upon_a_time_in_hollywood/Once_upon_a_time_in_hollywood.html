@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="desciption" content="This is film page" />
+    <link rel="stylesheet" href="Once_upon_a_time_in_hollywood.css">
+    <title>Once Upon a Time in... Hollywood</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- Nav bar  -->
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a href="../../docs/index.html" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div>
+                </div>
+                <div class="log_in">
+                    <a href="../../login_registration_contactus/login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <video autoplay muted controls loop class="background-clip">
+            <source src="./Trailer/WhatsApp Video 2025-05-05 at 06.13.12_fe379f9a.mp4">
+        </video>
+    </section>
+
+
+
+    <!-- description -->
+    <div class="description">
+        <div class="time">
+            <p class="type">
+                <span>Period Drama</span>
+                <span>Comedy</span>
+                <span>Drama</span>
+            </p>
+            <p class="hours">
+                <span>02:41:37</span>
+                <!-- <span>Rating:</span> -->
+            </p>
+        </div>
+        <div class="title">Once Upon a Time in... Hollywood</div>
+        <!-- <p class="available">AVAILABLE NOW</p> -->
+        <p class="des">As Hollywood's Golden Age is winding down during the summer of 1969, television actor Rick Dalton
+            and his stunt double Cliff Booth endeavor to achieve lasting success in Hollywood
+
+        </p>
+    </div>
+
+    <h2>Crew</h2>
+    <div class="crew">
+
+        <div class="chris">
+            <img src="./Crew/Quentin-Tarantino.webp">
+            <p>Quentin Tarantino</p><br />
+            <p class="job">Director</p>
+        </div>
+
+        <div class="jordan">
+            <img src="./Crew/Fred_Raskin.jpg">
+            <p>Fred Raskin</p><br />
+            <p class="job">Editor</p>
+        </div>
+
+        <br />
+
+        <div class="hans">
+            <img src="./Crew/Barbara_Ling.jpg">
+            <p>Barbara Ling</p><br />
+            <p class="job">Production Designer</p>
+        </div>
+
+        <div class="wally">
+            <img src="./Crew/Robert_Richardson.jpg">
+            <p>Robert Richardson</p><br />
+            <p class="job">Cinemato grapher</p>
+        </div>
+    </div>
+
+
+    <!-- Cast -->
+    <h2> Cast</h2>
+    <div class="cast">
+
+
+        <!-- Leonardo dicapreo -->
+        <div class="leo"> <img src="./Cast/leo.jpeg" />
+            <p>Leonardo DiCaprio</p> <br />
+            <p class="charname">Rick Dalton</p>
+        </div>
+
+        <!-- Tom Hardy -->
+        <div class="tom"> <img src="./Cast/brad.jpeg" />
+            <p>Brad Pitt</p><br />
+            <p class="charname">Cliff Booth</p>
+        </div>
+
+        <br />
+
+        <!-- Cillian Murphy -->
+        <div class="cillian"> <img src="./Cast/morgot-robbie.jpg">
+            <p>Margot Robbie</p><br />
+            <p class="charname">Sharon Tate</p>
+        </div>
+
+        <!-- Joseph Gordon-Levitt -->
+        <div class="joseph"> <img src="./Cast/emile-hirsch.jpg">
+            <p>Emile Hirsch</p><br />
+            <p class="charname">Jay Sebring</p>
+        </div>
+
+        <br />
+
+        <!-- Marion Cotillard -->
+        <div class="marion"> <img src="./Cast/Margaret_Qualley.jpg">
+            <p>Margaret Qualley</p><br />
+            <p class="charname">Pussycat</p>
+        </div>
+
+        <!-- Ken Watanabe -->
+        <div class="ken"> <img src="./Cast/Timothy_Olyphant.jpg">
+            <p>Timothy Olyphant</p><br />
+            <p class="charname">James Stacy</p>
+        </div>
+
+        <br />
+
+        <!-- Dileep Rao -->
+        <div class="dileep"> <img src="./Cast/Julia_Butters.jpeg">
+            <p>Julia Butters</p><br />
+            <p class="charname">Trudi Fraser</p>
+        </div>
+
+    </div>
+
+    <div class="film">
+        <video controls src="Once.Upon.a.Time.in.Hollywood.2019.720p.UHD.BluRay.x264-Pahe.in.mkv"></video>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="../../Home_Page\index.html">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li class="contact_us"><a href="../../login_registration_contactus/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                    <br /> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                    <br /> Loay_hossam Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+
+</body>

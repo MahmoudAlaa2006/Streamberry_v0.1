@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="desciption" content="This is film page" />
+    <link rel="stylesheet" href="Mulholland_drive.css">
+    <title>Mulholland Drive</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- Nav bar  -->
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a href="../../docs/index.html" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div>
+                </div>
+                <div class="log_in">
+                    <a href="../../login_registration_contactus/login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <video autoplay muted controls loop class="background-clip">
+            <source src="./Trailer/WhatsApp Video 2025-05-05 at 04.26.47_e489ffcb.mp4">
+        </video>
+    </section>
+
+
+
+    <!-- description -->
+    <div class="description">
+        <div class="time">
+            <p class="type">
+                <span>Psychological Drama</span>
+                <span>Suspense Mystery</span>
+                <span>Tragedy</span>
+            </p>
+            <p class="hours">
+                <span>02:27:18</span>
+                <!-- <span>Rating:</span> -->
+            </p>
+        </div>
+        <div class="title">Mulholland Drive</div>
+        <p class="des">After a car wreck on Mulholland Drive renders a woman amnesiac, she and a Hollywood-hopeful
+            search for clues and answers across Los Angeles in a twisting venture beyond dreams and reality.
+        </p>
+    </div>
+
+    <h2>Crew</h2>
+    <div class="crew">
+
+        <div class="chris">
+            <img src="./Crew/David_Lynch.jpeg">
+            <p>David Lynch</p><br />
+            <p class="job">Director</p>
+        </div>
+
+        <div class="jordan">
+            <img src="./Crew/Mary_Sweeney.avif">
+            <p>Mary Sweeney</p><br />
+            <p class="job">Editor</p>
+        </div>
+
+        <br />
+
+        <div class="hans">
+            <img src="./Crew/Angelo_Badalamenti.jpg">
+            <p>Angelo Badalamenti</p><br />
+            <p class="job">Composer</p>
+        </div>
+
+        <div class="wally">
+            <img src="./Crew/Peter_Deming.jpeg">
+            <p>Peter Deming</p><br />
+            <p class="job">Cinemato grapher</p>
+        </div>
+    </div>
+
+
+    <!-- Cast -->
+    <h2> Cast</h2>
+    <div class="cast">
+
+
+        <!-- Leonardo dicapreo -->
+        <div class="leo"> <img src="./Cast/Naomi-Watts.webp" />
+            <p>Naomi Watts</p> <br />
+            <p class="charname">Betty Elms</p>
+        </div>
+
+        <!-- Tom Hardy -->
+        <div class="tom"> <img src="./Cast/Laura_Harring.jpeg" />
+            <p>Laura Harring</p><br />
+            <p class="charname">Rita</p>
+        </div>
+
+        <br />
+
+        <!-- Cillian Murphy -->
+        <div class="cillian"> <img src="./Cast/Justin_Theroux.jpeg">
+            <p>Justin Theroux</p><br />
+            <p class="charname">Adam</p>
+        </div>
+
+        <!-- Joseph Gordon-Levitt -->
+        <div class="joseph"> <img src="./Cast/Jeanne_Bates.webp">
+            <p>Jeanne Bates</p><br />
+            <p class="charname">Irene</p>
+        </div>
+
+        <br />
+
+        <!-- Marion Cotillard -->
+        <div class="marion"> <img src="./Cast/Robert_Forster.jpeg">
+            <p>Robert Forster</p><br />
+            <p class="charname">Detective McKnight</p>
+        </div>
+
+        <!-- Ken Watanabe -->
+        <div class="ken"> <img src="./Cast/Brent_Briscoe.webp">
+            <p>Brent Briscoe</p><br />
+            <p class="charname">Detective Domgaard</p>
+        </div>
+
+        <br />
+
+        <!-- Dileep Rao -->
+        <div class="dileep"> <img src="./Cast/Patrick_Fischler.jpg">
+            <p>Patrick Fischler</p><br />
+            <p class="charname">Dan</p>
+        </div>
+
+    </div>
+
+    <div class="film">
+        <video controls src="../../../Entertainment/Films/Shutter.Island.mp4"></video>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="../../Home_Page\index.html">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li class="contact_us"><a href="../../login_registration_contactus/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                    <br /> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                    <br /> Loay_hossam Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+
+</body>

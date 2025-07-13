@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="desciption" content="This is film page" />
+    <link rel="stylesheet" href="inception.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Inception</title>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a href="../../docs/index.html" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div>
+                </div>
+                <div class="log_in">
+                    <a href="../../login_registration_contactus/login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <video controls autoplay muted loop class="background-clip">
+            <source src="inception trailer.mp4">
+        </video>
+    </section>
+    <div class="description">
+        <div class="time">
+            <p class="type">
+                <span>Science Fiction</span>
+                <span>Drama</span>
+                <span>Action</span>
+            </p>
+            <p class="hours">
+                <span>02:28:07</span>
+            </p>
+        </div>
+        <div class="title">Inception</div>
+        <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of
+            planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to
+            disaster.</p>
+    </div>
+    <h2>Crew</h2>
+    <div class="crew">
+        <div class="chris">
+            <img src="Crew/Chris Nolan.jpeg">
+            <p>Christopher Nolan</p><br />
+            <p class="job">Director</p>
+        </div>
+        <div class="jordan">
+            <img src="Crew/Jordan_Goldberg.webp">
+            <p>Jordan Goldberg</p><br />
+            <p class="job">Co-producer</p>
+        </div>
+        <br />
+        <div class="hans">
+            <img src="Crew/Hans Zimmer.jpeg">
+            <p>Hans Zimmer</p><br />
+            <p class="job">Composer</p>
+        </div>
+        <div class="wally">
+            <img src="Crew/Wally Pfister.jpeg">
+            <p>Wally Pfister</p><br />
+            <p class="job">Cinemato grapher</p>
+        </div>
+    </div>
+    <h2> Cast</h2>
+    <div class="cast">
+        <div class="leo"> <img src="Leonardo dicapreo.jpg" />
+            <p>Leonardo DiCaprio</p> <br />
+            <p class="charname">Cobb</p>
+        </div>
+        <div class="tom"> <img src="Tom Hardy.jpg" />
+            <p>Tom Hardy</p><br />
+            <p class="charname">Eames</p>
+        </div>
+        <br />
+        <div class="cillian"> <img src="Cillian murphy.jpg">
+            <p>Cillian Murphy</p><br />
+            <p class="charname">Robert Fisher</p>
+        </div>
+        <div class="joseph"> <img src="joseph gordon.jpg">
+            <p class="realname">Joseph Gordon</p><br />
+            <p class="charname">Arthur</p>
+        </div>
+        <br />
+        <div class="marion"> <img src="marion.jpg">
+            <p>Marion Cotillard</p><br />
+            <p class="charname">Mall</p>
+        </div>
+        <div class="ken"> <img src="ken watanabe.jpg">
+            <p>Ken Watanabe</p><br />
+            <p class="charname">Saito</p>
+        </div>
+        <br />
+        <div class="dileep"> <img src="dileep rao.jpg">
+            <p>Dileep Rao</p><br />
+            <p class="charname">Yusuf</p>
+        </div>
+    </div>
+    <div class="film">
+        <video controls src="../../../Entertainment/Films/Shutter.Island.mp4"></video>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="../../Home_Page\index.html">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li class="contact_us"><a href="../../login_registration_contactus/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                    <br /> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                    <br /> Loay_hossam Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+</body>

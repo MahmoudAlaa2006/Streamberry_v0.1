@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <div class="navbar_container">
+             <div class="logo_container">
+                 <h1 class="logo">Streamberry</h1>
+             </div>
+             <div class="menu_container">
+                 <ul class="menu_list">
+                    <li> <a href="../docs/index.html" class="menu_list_item">Home</a></li>
+                     <li> <a href="#" class="menu_list_item">Movies</a></li>
+                     <li> <a href="#" class="menu_list_item">TV</a></li>
+                     <li> <a href="#" class="menu_list_item">Anime</a></li>
+                     <li> <a href="#" class="menu_list_item">New</a></li>
+                 </ul>
+                 <div class="search">
+                     <form action="" class="search">
+                         <input type="text" class="search_input" placeholder="  search...">
+                     </form>
+                  </div>
+              </div>
+             <div class="log_in">
+                <a href="login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+             </div>
+         </div>
+       </div> 
+     </header>
+
+    <main class="main-content">
+        <div class="wrapper">
+            <div class="form-header">
+                <div class="titles">
+                    <div class="title-login">Login</div>
+                </div>
+            </div>
+            <form id="loginForm" action="/login" method="POST" class="login-form" autocomplete="on">
+                <div class="input-box">
+                    <input  class="input-field" id="log-email" >
+                    <label for="log-email" class="label">Email</label>
+                    <i class='bx bx-envelope icon'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" id="log-pass" >
+                    <label for="log-pass" class="label">Password</label>
+                    <i class='bx bx-lock-alt icon'></i>
+                </div>
+                <div class="form-cols">
+                    <div class="col-1">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="col-2">
+                        <a class="contus" href="contactus.html" aria-label="Reset your password">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="input-box">
+                   <a href="../Home_page/index.html"><button class="btn-submit" id="SignInBtn">Sign In <i class='bx bx-log-in'></i></button></a>
+                </div>
+                <div class="switch-form">
+                    <span>Don't have an account? <a  class="reg" href="register.html">Register</a></span>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class="social_icons">
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+      </div>
+      <div class="footer_nav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Team</a></li>
+          <li class="contact_us"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright © 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif<br>Mohamed_abdelhamed Mohamed_elsaid Mazen_Elshamy<br>Loay_hossam Youssef_karam Youssef_Morqus</span></p>
+  </footer>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('log-email').value;
+        const password = document.getElementById('log-pass').value;
+
+
+        if (email === '' ) {
+            alert('Please enter email');
+        }  
+        else if (!email.includes('@')) {
+            alert('Invalid email. It must contain "@".');
+        }
+        else if(password === ''){
+            alert('Please enter  password.');
+        }
+
+        else {
+            document.getElementById('log-email').value = '';
+            document.getElementById('log-pass').value = '';
+            alert('Login Success');
+
+        }
+    });
+    </script>
+
+</body>
+</html>

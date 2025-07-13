@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar_container">
+        <div class="logo_container">
+          <h1 class="logo">Streamberry</h1>
+        </div>
+        <div class="menu_container">
+          <ul class="menu_list">
+            <li><a href="../docs/index.html" class="menu_list_item">Home</a></li>
+            <li><a href="#" class="menu_list_item">Movies</a></li>
+            <li><a href="#" class="menu_list_item">TV</a></li>
+            <li><a href="#" class="menu_list_item">Anime</a></li>
+            <li><a href="#" class="menu_list_item">New</a></li>
+          </ul>
+          <div class="search">
+            <form action="" class="search">
+              <input type="text" class="search_input" placeholder="  search...">
+            </form>
+          </div>
+        </div>
+        <div class="log_in">
+          <a href="login.html"><button type="button" class="log_in_button">Log in</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <div class="box">
+        <div class="form-register">
+          <h2>Register</h2>
+          <form id="registerForm" action="#">
+            <div class="input-box">
+              <input type="text" class="input-field" id="reg-username" >
+              <label>Username</label>
+              <i class='bx bx-user icon'></i>
+            </div>
+
+            <div class="input-box">
+              <input type="" class="input-field" id="reg-email" >
+              <label>Email</label>
+              <i class='bx bx-envelope icon'></i>
+            </div>
+
+            <div class="input-box">
+              <input type="password" class="input-field" id="reg-password" >
+              <label>Password</label>
+              <i class='bx bx-lock-alt icon'></i>
+            </div>
+
+            <div class="subscribtion-plan">
+              <p>Choose your subscription plan:</p>
+              <label><input type="radio" name="subscription" value="monthly"> Monthly - $10/month</label><br>
+              <label><input type="radio" name="subscription" value="annually"> Annually - $80/year</label>
+            </div>
+
+            <div class="payment-method">
+              <p>Choose your payment method:</p>
+            </div>
+            <div class="payment-icons">
+              <label title="Visa">
+                <input type="radio" name="payment" value="visa">
+                <i class="fab fa-cc-visa"></i>
+              </label>
+              <label title="MasterCard">
+                <input type="radio" name="payment" value="mastercard">
+                <i class="fab fa-cc-mastercard"></i>
+              </label>
+              <label title="PayPal">
+                <input type="radio" name="payment" value="paypal">
+                <i class="fab fa-cc-paypal"></i>
+              </label>
+            </div>
+
+            <div class="remember-forget">
+              <label><input type="checkbox" id="agree-terms"> Agree to terms and conditions</label>
+            </div>
+
+            <button type="submit">Register</button>
+
+            <div class="login-register">
+              <p>Already have an account? <a href="login.html">Login</a></p>
+              <p>Facing an issue? <a href="contactus.html">Contact us</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="social_icons">
+      <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+    </div>
+
+    <div class="footer_nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Our Team</a></li>
+        <li class="contact_us"><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Copyright © 2025;
+        Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif<br>
+        Mohamed_abdelhamed Mohamed_elsaid Mazen_Elshamy<br>
+        Loay_hossam Youssef_karam Youssef_Morqus</span>
+      </p>
+    </footer>
+  </div>
+
+  <!-- JavaScript Validation -->
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById('reg-username').value;
+      const email = document.getElementById('reg-email').value;
+      const password = document.getElementById('reg-password').value;
+      const subscription = document.querySelector('input[name="subscription"]:checked');
+      const payment = document.querySelector('input[name="payment"]:checked');
+      const terms = document.getElementById('agree-terms').checked;
+
+      if (username === '') {
+        alert('Please enter a username.');
+      } else if (email === '') {
+        alert('Please enter an email.');
+      } else if (!email.includes('@')) {
+        alert('Invalid email. It must contain "@" symbol.');
+      } else if (password === '') {
+        alert('Please enter a password.');
+      } else if (!subscription) {
+        alert('Please choose a subscription plan.');
+      } else if (!payment) {
+        alert('Please choose a payment method.');
+      } else if (!terms) {
+        alert('You must agree to the terms and conditions.');
+      } else {
+        alert('Registration successful!');
+        this.reset();
+      }
+
+    });
+  </script>
+</body>
+</html>

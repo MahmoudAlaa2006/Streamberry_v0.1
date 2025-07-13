@@ -1,0 +1,475 @@
+body {
+    width: 1000px;
+    background-color: #151515;
+    color: white;
+    background-attachment: url("inception\ trailer.mp4");
+    overflow-x: hidden;
+}
+
+/* Nav bar styling 2 */
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+}
+
+
+.navbar.scrolled {
+    background-color: black;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+
+.logo_container {
+    flex: 0 0 auto;
+}
+
+.logo {
+    font-size: 30px;
+    color: blue;
+}
+
+.menu_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu_list li {
+    list-style: none;
+}
+
+.menu_list li a {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.menu_list li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: blue;
+    transition: all 0.4s ease;
+}
+
+.menu_list li a:hover:before {
+    width: 100%;
+}
+
+
+.right_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search_input {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+
+}
+
+.log_in_button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.log_in_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Trailer styling */
+
+.description {
+    position: relative;
+}
+
+.description p {
+    z-index: 3;
+    position: absolute;
+    top: -218px;
+    right: 455px;
+    width: 500px;
+}
+
+.time .hours {
+    top: -260px;
+    right: 460px;
+}
+
+.time .type {
+    margin: 5px;
+    top: -244px;
+    right: 455px;
+}
+
+.time span::before,
+.type span::before {
+    margin: 2px;
+    display: inline-block;
+    content: "";
+    border: 4px solid blue;
+    border-radius: 10px;
+    height: 0px;
+}
+
+.description .title {
+    position: absolute;
+    top: -390px;
+    right: 187px;
+    z-index: 3;
+    color: gold;
+    font-weight: bold;
+    font-size: xxx-large;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cast styling */
+.cast {
+    position: relative;
+    left: 25px;
+}
+
+h2 {
+    position: relative;
+    right: -520px;
+    margin-bottom: 20px;
+}
+
+.cast div {
+    display: inline-block;
+    margin: 10px 103px;
+    position: relative;
+    right: -420px;
+    cursor: pointer;
+}
+
+.cast .h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2::before {
+    content: " ";
+    border-left: 5px solid blue;
+    margin: 5px;
+    border-width: 5px;
+    border-radius: 2px;
+}
+
+
+
+.cast img {
+    width: 75px;
+    height: 75px;
+    border-radius: 56px;
+    border-style: solid;
+    border-width: 0;
+}
+
+.cast p {
+    display: inline-block;
+    position: relative;
+    top: -27px;
+    right: -10px;
+}
+
+
+.cast p:hover,
+.cast img:hover {
+    opacity: 0.95;
+}
+
+.tom {
+    position: relative;
+    left: 461px;
+}
+
+.joseph {
+    position: relative;
+    left: 490px;
+}
+
+.ken {
+    position: relative;
+    left: 473px;
+}
+
+
+.cast .charname {
+    position: relative;
+    right: -89px;
+    opacity: 0.5;
+}
+
+.charname:hover {
+    text-decoration: underline;
+}
+
+/* End of cast styling */
+
+/* Crew styling */
+.crew {
+    display: inline-block;
+    margin-left: 362px;
+    width: 850px;
+}
+
+.crew div {
+    margin-left: 175px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.jordan,
+.wally {
+    padding-left: 34px;
+
+}
+
+.crew img {
+    display: flexbox;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    border-width: 0px;
+}
+
+.crew p {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    margin-left: 15px;
+
+}
+
+
+.job {
+    position: relative;
+    top: -16px;
+    right: -80px;
+    opacity: 0.5;
+}
+
+.wally {
+    position: relative;
+    right: -76px;
+}
+
+.jordan {
+    position: relative;
+    right: -39px;
+}
+
+.crew img:hover,
+.cast img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.cast p:hover,
+.crew p:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cast .charname:hover,
+.crew .job:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* End of crew styling */
+
+/* Trailer styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    left: 0;
+    margin-bottom: 110px;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* film sytyling */
+.film {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 260px;
+}
+
+.film video {
+    margin-top: 10px;
+    margin-left: 300px;
+    height: 700px;
+    width: 80vw;
+}
+
+/* Additions */
+.des::before {
+    margin: 2px;
+    display: inline-block;
+    content: "";
+    border: 4px solid blue;
+    border-radius: 10px;
+    height: 0px;
+}
+
+.des {
+    left: 41px;
+}
+
+/* Footer */
+
+footer {
+    width: 200vh;
+    margin-top: 40px;
+    background-color: #111;
+    padding: 50px 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer_container {
+    width: 100%;
+    padding: 0;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    left: -5px;
+    position: relative;
+}
+
+.social_icons li {
+    list-style: none;
+}
+
+.social_icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.social_icons a i {
+    color: black;
+    font-size: 28px;
+
+}
+
+.footer_nav {
+    margin-bottom: 40px;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+}
+
+.footer_nav ul a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer_nav ul a:hover {
+    color: #ccc;
+}
+
+.footer_button {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_button p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer_button .designer {
+    font-size: smaller;
+    letter-spacing: 1px;
+}

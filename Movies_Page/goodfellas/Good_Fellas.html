@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="desciption" content="This is film page" />
+    <link rel="stylesheet" href="Good_Fellas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <title>Good
+        Fellas</title>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+
+
+<body>
+    <!-- Nav bar 2 -->
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a href="../../docs/index.html" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="log_in">
+                    <a href="../../login_registration_contactus/login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <video autoplay controls muted loop class="background-clip">
+            <source src="trailer.mp4">
+        </video>
+    </section>
+
+
+
+    <!-- description -->
+    <div class="description">
+        <div class="time">
+            <p class="type">
+
+                <span>Drama</span>
+                <span>Action</span>
+            </p>
+            <p class="hours">
+                <span>02:43:07</span>
+                <!-- <span>Rating:</span> -->
+            </p>
+        </div>
+        <div class="title">Good Fellas</div>
+        <!-- <p class="available">AVAILABLE NOW</p> -->
+        <p class="des">This crime biopic of Henry Hill explores the seedy underbelly of New York's working-class mafia.
+            He journeys
+            from a slender, muscular petty criminal to a middle-aged cocaine addict and dealer, exploring the norms of
+            film and the rules of organized crime.</p>
+    </div>
+
+    <h2>Crew</h2>
+    <div class="crew">
+
+        <div class="chris">
+            <img src="crew/martin skorsizy.jpg">
+            <p>Martin Scorsese</p><br />
+            <p class="job">Director</p>
+        </div>
+
+        <div class="jordan">
+            <img src="crew/nikolas bildgy.jpg">
+            <p>Nicholas Pileggi</p><br />
+            <p class="job">Producer</p>
+        </div>
+
+        <br />
+
+        <div class="hans">
+            <img src="crew/arwin eynklr.jpg">
+            <p>Irwin Winkler</p><br />
+            <p class="job">Producer</p>
+        </div>
+
+        <div class="wally">
+            <img src="crew/bit taonsnd.jpg">
+            <p>Pete Townshend</p><br />
+            <p class="job">Singer</p>
+        </div>
+
+        <!-- <div class="lee">
+            <img src="Crew/Lee smith.jpeg">
+            <p>Lee Smith</p><br />
+            <p class="job">Editor</p>
+        </div>
+
+        <div class="guy">
+            <img src="Crew/Guy Hendrix.webp">
+            <p>Guy Hendrix</p><br />
+            <p class="job">Production Designer</p>
+        </div>
+
+        <div class="luke">
+            <img src="./Crew/Luke freeborn.webp">
+            <p>Luke Freeborn</p><br />
+            <p class="job">Art Directors</p>
+        </div>
+
+        <div class="jeff">
+            <img src="./Crew/Jeff kurland.jpg">
+            <p>Jeffrey Kurland</p><br />
+            <p class="job">Costume Designer</p>
+        </div> -->
+
+
+
+    </div>
+
+
+    <!-- Cast -->
+    <h2> Cast</h2>
+    <div class="cast">
+
+
+        <!-- leonardo dicapreo -->
+        <div class="leo"> <img src="cast/robert de niro.jpg" />
+            <p>Robert De Niro</p> <br />
+            <p class="charname">James Conway</p>
+        </div>
+
+        <!-- Tom Hardy -->
+        <div class="tom"> <img src="cast/ray liotta.jpg" />
+            <p>Ray Liotta</p><br />
+            <p class="charname">Henry Hill</p>
+        </div>
+
+        <br />
+
+        <!-- Cillian Murphy -->
+        <div class="cillian"> <img src="cast/joe pesci.jpg">
+            <p>Joe Pesci</p><br />
+            <p class="charname">Tommy Devito</p>
+        </div>
+
+        <!-- Joseph Gordon-Levitt -->
+        <div class="joseph"> <img src="cast/paul sorvino.jpg">
+            <p class="realname">Paul Sorvino</p><br />
+            <p class="charname">Paul Cicero</p>
+        </div>
+
+        <br />
+
+        <!-- Marion Cotillard -->
+        <div class="marion"> <img src="cast/frank vincent.jpg">
+            <p>Frank Vincent</p><br />
+            <p class="charname">Billy Batts</p>
+        </div>
+
+        <!-- Ken Watanabe -->
+        <div class="ken"> <img src="cast/gina mastrogiaco.jpg">
+            <p>Gina Mastrogiaco</p><br />
+            <p class="charname">Janice Rossi</p>
+        </div>
+
+        <br />
+
+        <!-- Dileep Rao -->
+        <div class="dileep"> <img src="cast/chuck low.jpg">
+            <p>Chuck Low</p><br />
+            <p class="charname">Marris Kessler</p>
+        </div>
+
+    </div>
+
+    <div class="film">
+        <video controls src=""></video>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="../../Home_Page\index.html">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li class="contact_us"><a href="../../login_registration_contactus/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                    <br /> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                    <br /> Loay_hossam Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+
+
+</body>
