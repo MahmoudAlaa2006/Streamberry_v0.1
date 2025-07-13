@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+    <title>Streamberry</title>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a href="../../docs/index.html" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                     <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div> 
+                </div>
+                <div class="log_in">
+                    <a href="../../login_registration_contactus/login.html"> <button  type="button" class="log_in_button">Log in</button></a>
+                </div>
+                </div>
+        </div>
+    </header>
+    <section  class="top-img">
+            <h1 class="title-top">Wednesday</h1>
+            <p class="description-top">A sleuthing, supernaturally infused mystery charting Wednesday Addams' years as a student at Nevermore Academy. Wednesday's attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery that embroiled her parents 25 years ago - all while navigating her new and very tangled relationships at Nevermore.</p>
+    </section>
+    <main>
+        <h1 class="series">Available seasons</h1>
+        <section class="seasons flex">
+            <article class="card">
+                <a href="../Wednesday design/pages/Wednesday 1/index.html">
+                    <img class="img-card" width="300" src="./img/Wednesday- season.jpg" alt="">
+                </a>
+                <div style="width: 300px;" class="content">
+                    <h1 class="title">Season 1</h1>
+                    <p class="description">
+                        A sleuthing, supernaturally infused mystery charting Wednesday Addams' years as a student at Nevermore Academy. Wednesday's attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery that embroiled her parents 25 years ago - all while navigating her new and very tangled relationships at Nevermore.
+                    </p>
+                    <div class="button-card flex">
+                        <div class="flex" style="gap: 3px;">
+                            <a href="https://www.pinterest.com/search/pins/?q=Wednesday%20Netflix&rs=typed" class="image flex" style="gap: 3px; color: aliceblue;">Image<div class="flex border-icon">
+                                <i class="fa-solid fa-image"></i>
+                            </div></a>
+                        </div>
+                        <div class="flex" style="gap: 3px;">
+                            <a href="../Wednesday design/pages/Wednesday 1/index.html" class="TV flex" style="gap: 3px; color: aliceblue;">Episodes<div class="flex border-icon">
+                                <i class="fa-solid fa-tv"></i>
+                            </div></a>
+                    </div>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li class="contact_us"><a href="../../login_registration_contactus/contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>    
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                <br/> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                <br/> Loay_hossame Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+</body>
+</html>

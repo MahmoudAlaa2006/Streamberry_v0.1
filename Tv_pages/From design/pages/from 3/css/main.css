@@ -1,0 +1,99 @@
+
+.Cast{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.cast-culom{
+    flex-direction: column;
+    gap: 10px;
+}
+.cast_title{
+    margin-top: 90px;
+}
+
+.actor-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+.name{
+    margin-left: 10px;
+    & .name-actor{
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    & .name-character{
+        font-size: 18px;
+        color: rgb(80, 95, 255);
+    }
+}
+.episodes{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 1.4rem;
+    
+}
+.card-episodes{
+    margin-left: 10px;
+    background-color: #212730;
+    border-radius: 10px;
+    transition: .2s;
+    box-shadow: 0px 2px 1px -1px rgba(38, 0, 255, 0.669), 0px 1px 1px 0px rgba(0, 81, 255, 0.669), 0px 1px 3px 0px rgba(0, 17, 255, 0.669);
+}
+.card-episodes:hover{
+    scale: 1.3;
+}
+.episodes-img{
+    background-image: url('../img&video/home-page.avif');
+    width: 250px;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title-episode{
+    justify-content: center;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button-card{
+    justify-content: space-around;
+    & .border-icon{
+        margin-bottom: 5px;
+        width: 30px; /* Adjust size */
+        height: 30px;
+        border: 4px solid blue;
+        border-radius: 50%; 
+        justify-content: center;
+        align-items: center;
+        
+
+        
+        }
+        
+
+    }
+    & a:hover{
+        scale: 1.3;
+    }
+i{
+    font-size: 13px;
+    color: aliceblue;
+}
+.time-episode{
+    color: #656882;
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 13px;
+    margin-top: 10px;
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+    <title>Streamberry</title>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_container">
+                <div class="logo_container">
+                    <h1 class="logo">Streamberry</h1>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu_list">
+                        <li> <a id="Home1"href="#" class="menu_list_item">Home</a></li>
+                        <li> <a href="#" class="menu_list_item">Movies</a></li>
+                        <li> <a href="#" class="menu_list_item">TV</a></li>
+                        <li> <a href="#" class="menu_list_item">Anime</a></li>
+                        <li> <a href="#" class="menu_list_item">New</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="" class="search">
+                            <input type="text" class="search_input" placeholder="  search...">
+                        </form>
+                    </div>
+                </div>
+                <div class="log_in">
+                    <button id="Login" type="button" class="log_in_button">Log in</button>
+                </div>
+                </div>
+        </div> 
+        </header>
+    <section class=" container">
+        <video controls autoplay loop muted class="background-clip">
+            <source src="./img&video/from season 1.webm">
+        </video>
+        <div class="content">
+            <h1>FROM</h1>
+            <a class="navgator-main" href="#Episodes">EPISODES</a>
+        </div>
+    </section>
+    <main>
+        <br>
+        <h3 class="cast_title" style="color: rgb(30, 0, 255); font-size: 30px; margin-left: 30px;">CAST</h3>
+        <div class=" Cast flex">
+            <div class="cast-culom flex">
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/boid.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Harold Perrineau</div>
+                    <div class="name-character">Boyd Stevens</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/tabitha.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Catalina Sandino</div>
+                    <div class="name-character">Tabitha Matthews</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/gem.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Eion Bailey</div>
+                    <div class="name-character">Jim Matthews</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/joly.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Hannah Cheramy</div>
+                    <div class="name-character">Julie Matthews</div>
+                </div>
+                </div>
+            </div>
+            <div class="cast-culom flex">
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/طفل.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Simon Webster</div>
+                    <div class="name-character">Ethan Matthews</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/أم\ الصيني.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Elizabeth Moy</div>
+                    <div class="name-character">
+                        Tian Chen Liu</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/rece.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Ricky He</div>
+                    <div class="name-character">
+                        Kenny</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/fector.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Scott McCord</div>
+                    <div class="name-character">
+                        Victor</div>
+                </div>
+                </div>
+            </div>
+            <div class="cast-culom flex">
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/fatma.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Pegah Ghafoori</div>
+                    <div class="name-character">
+                        Fatima</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/alice.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">
+                        Corteon Moore</div>
+                    <div class="name-character">
+                        Ellis</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/father\ ged.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Shaun Majumder</div>
+                    <div class="name-character">
+                        Father Khatri</div>
+                </div>
+                </div>
+                <div class="character flex">
+                <div class="actor-img" style="background-image: url('./img&video/actors/sara.jpg');"></div>
+                <div class="name">
+                    <div class="name-actor">Avery Konrad</div>
+                    <div class="name-character">
+                        Sara Myers</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </main>
+    <h3 style="color: rgb(30, 0, 255); font-size: 30px; margin-left: 30px;">EPISODES</h3>
+        <br>
+    <main class="flex " style="justify-content: center;">
+        <div class="episodes  flex" id="Episodes">
+            
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">1</h1></div>
+                <div class="title-episode flex">
+                    Long Day's Journey Into Night</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">2</h1></div>
+                <div class="title-episode flex">
+                    The Way Things Are Now</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">3</h1></div>
+                <div class="title-episode flex">
+                    Choosing Day</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">4</h1></div>
+                <div class="title-episode flex">
+                    A Rock and a Farway</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">5</h1></div>
+                <div class="title-episode flex">
+                    Silhouettes</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">6</h1></div>
+                <div class="title-episode flex">
+                    Book 74</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">7</h1></div>
+                <div class="title-episode flex">
+                    All Good Things...</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">8</h1></div>
+                <div class="title-episode flex">
+                    Broken Windows, Open Doors</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">9</h1></div>
+                <div class="title-episode flex">
+                    Into the Woods</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+            <div class="card-episodes">
+                <div class="episodes-img" style="position: relative;"><h1 style="color: blue; position: absolute; left: 32px; top: 50%; align-items: center; font-size: 100px; top: 14px;">10</h1></div>
+                <div class="title-episode flex">
+                    Oh, the Places We'll Go</div>
+                <div class="time-episode">60 minutes</div>    
+                <br>
+                <div class="button-card flex">
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Share<div class="flex border-icon">
+                            <i class="fa-solid fa-share"></i>
+                        </div></a>
+                    </div>
+                    <div class="flex" style="gap: 3px;">
+                        <a href="#" class="share flex" style="gap: 3px; color: aliceblue;">Play<div class="flex border-icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a id="Home2"href="#">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li><a id="Contact-Us"href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>    
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                <br/> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                <br/> Loay_hossame Yousif_karam Yousif_Morqus</span></p>
+        </div>
+</footer>
+<script src="from1.js">
+
+</script>
+</body>
+</html>
