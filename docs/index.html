@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamberry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+</head>
+<body> 
+    <header>
+       <div class="navbar">
+         <div class="navbar_container">
+            <div class="logo_container">
+                <h1 class="logo">Streamberry</h1>
+            </div>
+            <div class="menu_container">
+                <ul class="menu_list">
+                    <li> <a  id="Home" href="#" class="menu_list_item">Home</a></li>
+                    <li> <a href="#film" class="menu_list_item">Movies</a></li>
+                    <li> <a href="#tv" class="menu_list_item">TV</a></li>
+                    <li> <a href="#anime" class="menu_list_item">Anime</a></li>
+                    <li> <a href="#new" class="menu_list_item">New</a></li>
+                </ul>
+                <div class="search">
+                    <form action="" class="search">
+                        <input type="text" class="search_input" placeholder="  search...">
+                    </form>
+                 </div>
+             </div>
+            <div class="log_in">
+                <button id="Login" type="button" class="log_in_button">Log in</button>
+            </div>
+        </div>
+      </div> 
+    </header>
+    <div class="container">
+        <div class="content_container">
+            <div class="featured_content" >
+                 <img id="Big_pic" class="featured_img" src="img/background/back1.jpg" alt="Background Image" />
+                 <div class="overlay"></div>
+                 <img id="Small_pic" class="featured_title" src="img/typography/tybatnam.png" alt="" />
+                 <p id="Paragraph" class="featured_desc">When a sadistic serial killer begins murdering key political figures in Gotham,<br>
+                        the Batman is forced to investigate the city's hidden corruption and question his family's involvement</p>
+                 <button id="Watch"class="featured_button">WATCH</button>  
+                 <button id="transfer" class="right_arrow"><i class="fa-solid fa-arrow-right arrow1"></i></button> 
+            </div> 
+            <div id="new" class="new_release_list_container ">
+                <h1 class="new_release_list_title ">New releases</h1>
+                <div class="new_release_list_wrapper ">
+                    <div id="scroll" class="new_release_list ">
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image " src="img/posters/new_release_poster/1new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image " src="img/posters/new_release_poster/2new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image " src="img/posters/new_release_poster/3new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image " src="img/posters/new_release_poster/4new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image " src="img/posters/new_release_poster/5new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_6" src="img/posters/new_release_poster/6new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_7" src="img/posters/new_release_poster/7new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_8" src="img/posters/new_release_poster/8new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_9" src="img/posters/new_release_poster/9new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_10" src="img/posters/new_release_poster/10new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_11" src="img/posters/new_release_poster/11new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_12" src="img/posters/new_release_poster/12new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_13" src="img/posters/new_release_poster/13new.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image new_14" src="img/posters/new_release_poster/14new.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                    <i id="right" class="fa-solid fa-angle-right arrow_new_list "></i>
+                    <i id="left" class="fa-solid fa-angle-left arrow_new_list_left "></i>
+                    </div>
+                </div>  
+            </div>
+            <div id="film" class="new_release_list_container movie_container">
+                <h1 class="new_release_list_title movie_title">Movie</h1>
+                <div class="new_release_list_wrapper movie_wrapper">
+                    <div  id="scroll1" class="new_release_list movie_list">
+                    <div class="new_release_list movie_list">
+                        <div  class="new_release_list movie_list">
+                        <div class="new_release_list_item">
+                            <img id="goodfellas"class="new_release_list_item_image movie_1" src="img/posters/movies_poster/1movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="Once_upon_a_time_in_hollywood"class="new_release_list_item_image movie_2" src="img/posters/movies_poster/2movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="Mulholland_drive"class="new_release_list_item_image movie_3" src="img/posters/movies_poster/3movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="Home_Alone"class="new_release_list_item_image movie_4" src="img/posters/movies_poster/4movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="El_Nazer"class="new_release_list_item_image movie_5" src="img/posters/movies_poster/5movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="fight_club"class="new_release_list_item_image movie_6" src="img/posters/movies_poster/6movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="spider_man_across_the_spider_verse" class="new_release_list_item_image movie_7" src="img/posters/movies_poster/7movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="la_la_land"class="new_release_list_item_image movie_8" src="img/posters/movies_poster/8movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="django_unchained" class="new_release_list_item_image movie_9" src="img/posters/movies_poster/9movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_10" src="img/posters/movies_poster/10movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_11" src="img/posters/movies_poster/11movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_12" src="img/posters/movies_poster/12movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_13" src="img/posters/movies_poster/13movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_14" src="img/posters/movies_poster/14movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_15" src="img/posters/movies_poster/15movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_16" src="img/posters/movies_poster/16movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_17" src="img/posters/movies_poster/17movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_18" src="img/posters/movies_poster/18movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_19" src="img/posters/movies_poster/19movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_20" src="img/posters/movies_poster/20movie.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image movie_21" src="img/posters/movies_poster/21movie.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                    <i id="right1" class="fa-solid fa-angle-right arrow_new_list arrow"></i>
+                    <i id="left1" class="fa-solid fa-angle-left arrow_new_list_left arrowleft"></i>
+                    </div>
+                </div>  
+            </div>
+            <div id="tv" class="new_release_list_container tv_container">
+                <h1 class="new_release_list_title yv_title">TV</h1>
+                <div class="new_release_list_wrapper tv_wrapper">
+                    <div id="scroll2" class="new_release_list tv_list">
+                        <div class="new_release_list_item">
+                            <img id="from" class="new_release_list_item_image tv1" src="img/posters/tv_poster/1tvposter.jpeg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="Wednesday"class="new_release_list_item_image tv2" src="img/posters/tv_poster/2tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img id="Silo"class="new_release_list_item_image tv3" src="img/posters/tv_poster/3tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv4" src="img/posters/tv_poster/4tvposter.jpeg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv5" src="img/posters/tv_poster/5tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv6" src="img/posters/tv_poster/6tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv7" src="img/posters/tv_poster/7tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv8" src="img/posters/tv_poster/8tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv9" src="img/posters/tv_poster/9tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv10" src="img/posters/tv_poster/10tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv11" src="img/posters/tv_poster/11tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv12" src="img/posters/tv_poster/12tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv13" src="img/posters/tv_poster/13tvposter.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image tv14" src="img/posters/tv_poster/14tvposter.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                    <i id="right2" class="fa-solid fa-angle-right arrow_new_list arrow"></i>
+                    <i id="left2" class="fa-solid fa-angle-left arrow_new_list_left arrowleft"></i>
+                    </div>
+                </div>  
+            </div>
+            <div id="anime" class="new_release_list_container anime_container">
+                <h1 class="new_release_list_title anime_title">Anime</h1>
+                <div class="new_release_list_wrapper anime_wrapper">
+                    <div id="scroll3" class="new_release_list anime_list">
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime1" src="img/posters/anime_poster/1anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime2" src="img/posters/anime_poster/2anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime3" src="img/posters/anime_poster/3anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime4" src="img/posters/anime_poster/4anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime5" src="img/posters/anime_poster/5anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime6" src="img/posters/anime_poster/6anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime7" src="img/posters/anime_poster/7anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime8" src="img/posters/anime_poster/8anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime9" src="img/posters/anime_poster/9anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime10" src="img/posters/anime_poster/10anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime11" src="img/posters/anime_poster/11anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime12" src="img/posters/anime_poster/12anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime13" src="img/posters/anime_poster/13anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime14" src="img/posters/anime_poster/14anime.jpg" alt="" />
+                        </div>
+                        <div class="new_release_list_item">
+                            <img class="new_release_list_item_image anime15" src="img/posters/anime_poster/15anime.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                    <i id="right3" class="fa-solid fa-angle-right arrow_new_list arrow"></i>
+                    <i id="left3" class="fa-solid fa-angle-left arrow_new_list_left arrowleft"></i>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="social_icons">
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">our Team</a></li>
+                    <li id="Contact-Us"class="contact_us"><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>    
+        <div class="footer_button">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Mahmoud_Alaa Mahmoud_Abdel3aty Mahmoud_sherif
+                <br/> Mouhamed_abdelhamed Mohamed_elsaid Mazen_Ashraf
+                <br/> Loay_hossame Yousif_karam Yousif_Morqus</span></p>
+        </div>
+    </footer>
+    <script src="Home.js">
+
+    </script>
+</body>
+</html>
